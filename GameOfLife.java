@@ -40,7 +40,8 @@ public class GameOfLife{
                Rectangle r1=new Rectangle(x,y,width+(col*setdist),height+(row*setdist)); // x and y can stay preset due to nature of draw
                 
             r1.setColor(Color.GRAY);
-            
+            //draws over lapping rectangles to form a grid 
+            // fill cannout be used here or the method doe snot work due to fill setting solid not overlapping 
             r1.draw();
             }
            
@@ -75,7 +76,7 @@ public class GameOfLife{
                 System.out.printf("%2d",states[row][col]);
                 
             }
-            System.out.println();
+            System.out.println(); // creates space between each row
         }
        
         
